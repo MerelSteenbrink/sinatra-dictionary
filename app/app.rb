@@ -7,7 +7,14 @@ get "/" do
   erb :form
 end
 
-get "/translation" do
-  "cabooom"
+post "/translation" do
+  @word = params[:word]
+  #{}"The word we are searching is... #{params[:word]}"
   erb :translation
 end
+
+# get "/translation" do
+#   "cabooom"
+#   erb :translation
+# end
+
